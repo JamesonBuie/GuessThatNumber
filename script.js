@@ -47,6 +47,13 @@ while (restartGame) {
 
     // Continues looping until user guesses the correct number or runs out of attempts. 
     while (true) {
+
+        // Displays the number when a code word is entered
+        if (guess = `Bean is cute`) {
+            alert(`The number is ${randomNum}`);
+            // Prompts user to enter another guess
+            guess = prompt(`Please enter a guess from 1 to ${randomNum}. You have ${attempts} attempt(s) left.`);
+        }
         // Tries to convert the user's guess into a number
         guess = parseInt(guess);
 
